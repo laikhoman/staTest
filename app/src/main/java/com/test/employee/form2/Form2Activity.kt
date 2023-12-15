@@ -1,4 +1,4 @@
-package com.android.karyawan
+package com.test.employee.form2
 
 import DialogDatePicker
 import EmployeeModel
@@ -9,11 +9,11 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.android.karyawan.Form2Act.KARYAWAN
-import com.android.karyawan.Form2Act.ON_REFRESH
 import com.test.employee.DBManager
 import com.test.employee.DBManagerListener
 import com.test.employee.DateUtils
+import com.test.employee.form2.Form2Act.KARYAWAN
+import com.test.employee.form2.Form2Act.ON_REFRESH
 import com.test.employee.databinding.ActivityForm2Binding
 import java.util.*
 
@@ -73,7 +73,7 @@ class Form2Activity : AppCompatActivity() {
 
     @SuppressLint("SetTextI18n")
     private fun setKaryawanToView(karyawanModel: EmployeeModel?){
-        _binding.contentForm2Icl.titleTv.text = "New karyawan"
+        _binding.contentForm2Icl.titleTv.text = "Add karyawan"
         _binding.contentForm2Icl.idEdt.isEnabled = true
         _binding.contentForm2Icl.saveCreateBtn.visibility = View.VISIBLE
         _binding.contentForm2Icl.saveUpdateBtn.visibility = View.GONE

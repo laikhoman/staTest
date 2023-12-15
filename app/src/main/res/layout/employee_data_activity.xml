@@ -28,7 +28,6 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bg_white_round_top"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
         tools:ignore="HardcodedText">
 
@@ -307,7 +306,7 @@
             android:layout_below="@+id/header_title"
             android:layout_above="@+id/bottom_layout"
             android:layout_marginHorizontal="10dp"
-            tools:listitem="@layout/karyawan_item"/>
+            tools:listitem="@layout/employee_item"/>
 
         <LinearLayout
             android:id="@+id/bottom_layout"

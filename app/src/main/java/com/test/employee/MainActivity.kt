@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.test.employee.databinding.ActivityMainBinding
+import com.test.employee.form1.Form1Activity
 import com.test.employee.github.RepoListActivity
 
 class MainActivity : AppCompatActivity() {
@@ -20,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         _binding.toolbar.title = "Halaman Utama"
 
         _binding.dataKaryawanBtn.setOnClickListener {
-//            startActivity(Intent(this, DataKaryawanActivity::class.java))
+            startActivity(Intent(this, Form1Activity::class.java))
         }
         _binding.dataDinamisBtn.setOnClickListener {
             startActivity(Intent(this, RepoListActivity::class.java))

@@ -24,7 +24,7 @@ class RepoListActivity : AppCompatActivity() {
         _binding = RepoListActivityBinding.inflate(layoutInflater)
         setContentView(_binding.root)
         setSupportActionBar(_binding.toolbar)
-        _binding.toolbar.title = "Github List"
+        _binding.toolbar.title = "Repo List"
         _binding.toolbar.subtitle = "https://api.github.com//users/google/repos"
 
         initRecyclerView(this)
