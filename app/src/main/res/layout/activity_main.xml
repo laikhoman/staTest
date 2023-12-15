@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            style="@style/AppTheme.NoActionBar"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextAppearance="@style/AppTheme.Toolbar.TitleWhite"
+            app:title="Halaman Utama"
+            app:subtitleTextAppearance="@style/AppTheme.Toolbar.SubtitleWhite"
+            app:subtitle="Test Skill Programmer"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_white_round_top"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        tools:ignore="HardcodedText">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:padding="14dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/data_karyawan_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="14dp"
+                android:text="1. Data Karyawan"
+                android:textAllCaps="true"
+                android:fontFamily="@font/font_primary_bold"
+                android:textStyle="bold"
+                android:textSize="@dimen/dimen_button_font_size"
+                android:textColor="true"
+                android:layout_marginVertical="14dp"
+                android:layout_marginHorizontal="14dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/data_dinamis_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="14dp"
+                android:background="@drawable/bg_button_primary"
+                android:text="2. Data Dinamis"
+                android:textAllCaps="true"
+                android:fontFamily="@font/font_primary_bold"
+                android:textStyle="bold"
+                android:textSize="@dimen/dimen_button_font_size"
+                android:textColor="@color/color_text_button_primary"
+                android:layout_marginVertical="14dp"
+                android:layout_marginHorizontal="14dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

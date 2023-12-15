@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_white_round_top"
+    tools:ignore="HardcodedText">
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingEnd="14dp"
+        android:paddingStart="14dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_primary_bold"
+            android:textStyle="bold"
+            android:text="Form 2"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/dimen_font_size_large" />
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_primary_bold"
+            android:layout_marginTop="2dp"
+            android:text="Filter Data"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/dimen_font_size_normal_large" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/font_primary"
+                    android:text="ID"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/dimen_font_size_small" />
+
+                <EditText
+                    android:id="@+id/id_edt"
+                    style="@style/editTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint=""
+                    android:maxLength="4"
+                    android:inputType="number" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/font_primary"
+                    android:text="Nama karyawan"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/dimen_font_size_small" />
+
+                <EditText
+                    android:id="@+id/firstname_edt"
+                    style="@style/editTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint=""
+                    android:maxLength="50"
+                    android:inputType="text" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/font_primary"
+                    android:text="Usia"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/dimen_font_size_small" />
+
+                <EditText
+                    android:id="@+id/firstAge_edt"
+                    style="@style/editTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint=""
+                    android:maxLength="3"
+                    android:inputType="number" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/font_primary"
+                    android:text="Tgl masuk kerja"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/dimen_font_size_small" />
+
+                <TextView
+                    android:id="@+id/firstJoinDate_edt"
+                    style="@style/editTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_weight="1"
+                    android:hint=""
+                    android:maxLength="50"
+                    android:inputType="text" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/top_layout">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/save_create_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="14dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/bg_button_primary"
+            android:text="CREATE"
+            android:textAllCaps="true"
+            android:fontFamily="@font/font_primary_bold"
+            android:textStyle="bold"
+            android:textSize="@dimen/dimen_button_font_size"
+            android:textColor="@color/color_text_button_primary" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/save_update_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="14dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/bg_button_primary"
+            android:text="UPDATE"
+            android:textAllCaps="true"
+            android:fontFamily="@font/font_primary_bold"
+            android:textStyle="bold"
+            android:textSize="@dimen/dimen_button_font_size"
+            android:textColor="@color/color_text_button_primary" />
+
+    </LinearLayout>
+
+</RelativeLayout>

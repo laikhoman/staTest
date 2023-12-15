@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#F7D08A</color>
+    <color name="colorPrimary">#D64949</color>
+    <color name="colorPrimaryLight">#DD8707</color>
+    <color name="colorPrimaryDark">#B53A3A</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondary">#FF9800</color>
+    <color name="colorSecondaryDark">#DD8707</color>
+    <color name="colorNews">#FF9800</color>
+    <color name="colorNewsDark">#DD8707</color>
+    <color name="colorRed">#D64949</color>
+    <color name="colorRedDark">#B53A3A</color>
+    <color name="colorSecondaryText">#4C4C4C</color>
+    <color name="colorRipplePrimary">#1A2196F3</color>
+    <color name="colorDivider">#d7d7d7</color>
+    <color name="colorEnabled">#0E8F0E</color>
+    <color name="colorDisabled">#AEAEAE</color>
+    <color name="colorLink">#002AFF</color>
+    <color name="colorGreyLv1">#d7d7d7</color>
+    <color name="colorGreyLv2">#9E9E9E</color>
+    <color name="colorGreyLv3">#6C6C6C</color>
+    <color name="colorVS1">#00A100</color>
+    <color name="colorVS2">#e44444</color>
+    <color name="colorVS3">#187BCA</color>
+    <color name="colorBgBadge">#FF5722</color>
+    <color name="colorBgSwipeRefresh">#FFFFFF</color>
+    <color name="colorBgMitra">#FFE69C</color>
+    <color name="colorFgMitra">#6E4412</color>
+    <color name="colorTranscludeToolbar">#99000000</color>
+    <color name="colorTranscludeStatusBar">#99000000</color>
+    <color name="colorBgWindow">#f7f7f7</color>
+
+    <color name="color_transclude_toolbar">#66000000</color>
+    <color name="color_transparent_toolbar">#00000000</color>
+
+</resources>

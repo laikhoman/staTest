@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            style="@style/AppTheme.NoActionBar"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextAppearance="@style/AppTheme.Toolbar.TitleWhite"
+            app:subtitleTextAppearance="@style/AppTheme.Toolbar.SubtitleWhite"
+            app:title="Form 1"
+            app:subtitle="Filter Data"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_white_round_top"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        tools:ignore="HardcodedText">
+
+        <LinearLayout
+            android:id="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:paddingEnd="14dp"
+            android:paddingStart="14dp"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/font_primary"
+                        android:text="Nama karyawan"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/dimen_font_size_small" />
+
+                    <EditText
+                        android:id="@+id/firstname_edt"
+                        style="@style/editTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint=""
+                        android:maxLength="50"
+                        android:inputType="text" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:fontFamily="@font/font_primary"
+                        android:text="s/d"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/dimen_font_size_very_small" />
+
+                    <EditText
+                        android:id="@+id/lastname_edt"
+                        style="@style/editTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint=""
+                        android:maxLength="50"
+                        android:inputType="text" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/font_primary"
+                        android:text="Usia"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/dimen_font_size_small" />
+
+                    <EditText
+                        android:id="@+id/firstAge_edt"
+                        style="@style/editTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint=""
+                        android:maxLength="3"
+                        android:inputType="number" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:fontFamily="@font/font_primary"
+                        android:text="s/d"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/dimen_font_size_very_small" />
+
+                    <EditText
+                        android:id="@+id/lastAge_edt"
+                        style="@style/editTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint=""
+                        android:maxLength="3"
+                        android:inputType="number" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/font_primary"
+                        android:text="Tgl masuk kerja"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/dimen_font_size_small" />
+
+                    <TextView
+                        android:id="@+id/firstJoinDate_edt"
+                        style="@style/editTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:layout_weight="1"
+                        android:hint=""
+                        android:focusable="false"
+                        android:maxLength="50"
+                        android:inputType="text" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:fontFamily="@font/font_primary"
+                        android:text="s/d"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/dimen_font_size_very_small" />
+
+                    <TextView
+                        android:id="@+id/lastJoinDate_edt"
+                        style="@style/editTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:layout_weight="1"
+                        android:hint=""
+                        android:maxLength="50"
+                        android:inputType="text" />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/search_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_layout"
+            android:layout_weight="1"
+            android:padding="14dp"
+            android:background="@drawable/bg_button_primary"
+            android:text="SEARCH"
+            android:textAllCaps="true"
+            android:fontFamily="@font/font_primary_bold"
+            android:textStyle="bold"
+            android:textSize="@dimen/dimen_button_font_size"
+            android:textColor="@color/color_text_button_primary"
+            android:layout_marginTop="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="14dp" />
+
+        <LinearLayout
+            android:id="@+id/header_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search_btn"
+            android:layout_marginHorizontal="10dp"
+            android:padding="4dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/id_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:layout_weight="1"
+                android:singleLine="false"
+                android:maxLines="1"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="ID"
+                android:fontFamily="@font/font_primary_bold"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/dimen_font_size_small" />
+
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:layout_weight="1"
+                android:singleLine="false"
+                android:maxLines="1"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="Nama"
+                android:fontFamily="@font/font_primary_bold"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/dimen_font_size_small" />
+
+            <TextView
+                android:id="@+id/tgl_masuk_kerja_tv"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:singleLine="false"
+                android:text="Tgl Masuk Kerja"
+                android:paddingBottom="4dp"
+                android:fontFamily="@font/font_primary_bold"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/dimen_font_size_small" />
+
+            <TextView
+                android:id="@+id/usia_tv"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:singleLine="false"
+                android:text="usia"
+                android:paddingBottom="4dp"
+                android:fontFamily="@font/font_primary_bold"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/dimen_font_size_small" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_title"
+            android:layout_above="@+id/bottom_layout"
+            android:layout_marginHorizontal="10dp"
+            tools:listitem="@layout/karyawan_item"/>
+
+        <LinearLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/new_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="14dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_button_primary"
+                android:text="NEW"
+                android:textAllCaps="true"
+                android:fontFamily="@font/font_primary_bold"
+                android:textStyle="bold"
+                android:textSize="@dimen/dimen_button_font_size"
+                android:textColor="@color/color_text_button_primary" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/edit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="14dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_button_primary"
+                android:text="EDIT"
+                android:textAllCaps="true"
+                android:fontFamily="@font/font_primary_bold"
+                android:textStyle="bold"
+                android:textSize="@dimen/dimen_button_font_size"
+                android:textColor="@color/color_text_button_primary" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/delete_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="14dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_button_primary"
+                android:text="HAPUS"
+                android:textAllCaps="true"
+                android:fontFamily="@font/font_primary_bold"
+                android:textStyle="bold"
+                android:textSize="@dimen/dimen_button_font_size"
+                android:textColor="@color/color_text_button_primary" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/close_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:padding="14dp"
+                android:background="@drawable/bg_button_primary"
+                android:text="CLOSE"
+                android:textAllCaps="true"
+                android:fontFamily="@font/font_primary_bold"
+                android:textStyle="bold"
+                android:textSize="@dimen/dimen_button_font_size"
+                android:textColor="@color/color_text_button_primary" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

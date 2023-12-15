@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_height_menu_icon">40dp</dimen>
+    <dimen name="_10dp">5dp</dimen>
+    <dimen name="recycler_view_item_width">50dp</dimen>
+    <dimen name="card_view_margin">8dp</dimen>
+    <dimen name="card_radius">4dp</dimen>
+    <dimen name="bg_cover_height">180dp</dimen>
+    <dimen name="_8dp">8dp</dimen>
+    <dimen name="divider_size">8dp</dimen>
+    <dimen name="_4dp">4dp</dimen>
+    <dimen name="dimen_rounded_button">6dp</dimen>
+    <dimen name="dimen_dialog_corner_radius">18dp</dimen>
+    <dimen name="dimen_card_corner_radius">6dp</dimen>
+    <dimen name="dimen_card_elevation">4dp</dimen>
+    <dimen name="dimen_card_margin_left_or_right_side">14dp</dimen>
+    <dimen name="dimen_card_margin_top_or_bottom_side">7dp</dimen>
+    <dimen name="dimen_recylcerview_padding_top_or_bottom_side">5dp</dimen>
+    <dimen name="dimen_recylcerview_padding_left_or_right_side">4dp</dimen>
+    <dimen name="dimen_font_bottom_menu_item_active">11dp</dimen>
+    <dimen name="dimen_font_bottom_menu_item">10dp</dimen>
+    <dimen name="dimen_font_home_menu">10dp</dimen>
+    <dimen name="dimen_font_chip">11dp</dimen>
+    <dimen name="dimen_button_font_size">14dp</dimen>
+    <dimen name="dimen_button_font_size_small">12dp</dimen>
+    <dimen name="dimen_font_size_very_small">11dp</dimen>
+    <dimen name="dimen_font_size_small">12dp</dimen>
+    <dimen name="dimen_font_size_normal">14dp</dimen>
+    <dimen name="dimen_font_size_normal_large">15dp</dimen>
+    <dimen name="dimen_font_size_large">17dp</dimen>
+    <dimen name="dimen_font_size_very_large">20dp</dimen>
+    <dimen name="dimen_font_number_size">17dp</dimen>
+    <dimen name="dimen_font_currency_size">14dp</dimen>
+    <dimen name="dimen_font_size_card_title">14dp</dimen>
+
+    <dimen name="dimen_round_window">18dp</dimen>
+
+    <dimen name="dimen_margin_top_content_appbar_oval">-48dp</dimen>
+</resources>

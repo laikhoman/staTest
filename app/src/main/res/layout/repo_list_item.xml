@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/id_tv"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:singleLine="false"
+        android:maxLines="1"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:text="id"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_weight="1"
+        android:singleLine="false"
+        android:maxLines="1"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:text="Nama"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/html_url_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_weight="1"
+        android:singleLine="false"
+        android:text="http://"
+        android:paddingBottom="4dp"
+        android:textStyle="italic"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="12dp" />
+
+</LinearLayout>
