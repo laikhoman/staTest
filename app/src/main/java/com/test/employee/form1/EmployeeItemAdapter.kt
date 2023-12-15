@@ -57,19 +57,19 @@ class EmployeeItemAdapter(
 
         private lateinit var tvID: TextView
         private lateinit var tvName: TextView
-        private lateinit var tvTglMasukKerja: TextView
-        private lateinit var tvUsia: TextView
+        private lateinit var tvEnterDate: TextView
+        private lateinit var tvAge: TextView
 
         @SuppressLint("SetTextI18n") fun bindView(item: EmployeeModel) {
             tvID = itemView.findViewById(R.id.id_tv)
             tvName = itemView.findViewById(R.id.name_tv)
-            tvTglMasukKerja = itemView.findViewById(R.id.tgl_masuk_kerja_tv)
-            tvUsia = itemView.findViewById(R.id.usia_tv)
+            tvEnterDate = itemView.findViewById(R.id.enter_tv)
+            tvAge = itemView.findViewById(R.id.age_tv)
 
             tvID.text = item.idKaryawan.toString()
             tvName.text = item.namaKaryawan
-            tvTglMasukKerja.text = DateUtils.getDDMMMYYYYFrom(item.tglMasukKerja)
-            tvUsia.text = item.usia.toString()
+            tvEnterDate.text = DateUtils.getDDMMMYYYYFrom(item.tglMasukKerja)
+            tvAge.text = item.usia.toString()
 
             itemView.setOnClickListener {
                 listener?.onClickItem(item)
